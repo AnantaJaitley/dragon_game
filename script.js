@@ -30,10 +30,10 @@ setInterval(() =>{
     dy = parseInt(window.getComputedStyle(Dino, null).getPropertyValue('top'));
     ox = parseInt(window.getComputedStyle(obstacle, null).getPropertyValue('left'));
     oy = parseInt(window.getComputedStyle(obstacle, null).getPropertyValue('top'));
-    offsetX = math.abs(dx-ox);
-    offsety = math.abs(dy-oy);
+    offsetX = Math.abs(dx-ox);
+    offsety = Math.abs(dy-oy);
     console.log(offsetX,offsetY);
-    if(offsetX< 93 && offsetY<  52){
+    if(offsetX< 73 && offsetY<  52){
         gameOver.style.visibility = 'visible';
         obstacle.classList.remove('obstacleAni');
     }
